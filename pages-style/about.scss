@@ -29,6 +29,28 @@ $gray-color: #838694;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .about-company {
+    padding: 30px 0;
+
+    .container {
+      .line {
+        .text {
+          h3 {
+            margin-bottom: 8px;
+            font-size: 19px;
+          }
+
+          p {
+            font-size: 13px;
+            color: $gray-color;
+          }
+        }
+      }
+    }
+  }
+}
 // end about-company
 
 // start features-company
@@ -59,6 +81,39 @@ $gray-color: #838694;
         p {
           color: $gray-color;
           line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .features-company {
+    padding: 20px 0;
+
+    .container {
+      .boxs {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+
+        .box {
+          padding: 20px 25px;
+          text-align: center;
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+
+          h4 {
+            font-size: 20px;
+            margin: 10px 0 5px;
+          }
+
+          p {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
         }
       }
     }
