@@ -73,3 +73,23 @@ ul {
     }
   }
 }
+
+@media (max-width: 550px) {
+  .page-title-warpper {
+    height: 200px;
+
+    .container {
+      .content {
+        h2 {
+          font-size: 25px;
+        }
+
+        .path {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

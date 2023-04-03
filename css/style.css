@@ -73,6 +73,17 @@ ul {
   text-decoration: underline !important;
 }
 
+@media (max-width: 550px) {
+  .page-title-warpper {
+    height: 200px;
+  }
+  .page-title-warpper .container .content h2 {
+    font-size: 25px;
+  }
+  .page-title-warpper .container .content .path a {
+    font-size: 14px;
+  }
+}
 .header-top {
   background-color: #1b1f2b;
   color: white;
@@ -1816,6 +1827,9 @@ footer .footer-bg-wave img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 40px;
 }
 .portfolio .container .line .left {
@@ -1875,6 +1889,10 @@ footer .footer-bg-wave img {
 }
 .portfolio .container .line .right .boxs .box img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 .portfolio .container .line .right .boxs .box .text {
   padding: 14px;
@@ -1892,4 +1910,314 @@ footer .footer-bg-wave img {
   color: #838694;
   font-weight: 500;
   font-size: 15px;
+}
+
+@media (max-width: 990px) {
+  .portfolio {
+    padding: 30px 0;
+  }
+  .portfolio .container .line {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .container .line .left {
+    width: 100%;
+    text-align: center;
+  }
+  .portfolio .container .line .left .btns-sort {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio .container .line .left .btns-sort .btn-sort {
+    padding: 5px 5px;
+    font-size: 11px;
+  }
+  .portfolio .container .line .right {
+    width: 100%;
+  }
+  .portfolio .container .line .right .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+}
+@media (max-width: 550px) {
+  .portfolio .container .line .left {
+    padding: 8px;
+  }
+  .portfolio .container .line .left .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .portfolio .container .line .left .btns-sort {
+    gap: 5px;
+  }
+  .portfolio .container .line .right .boxs {
+    gap: 15px;
+  }
+  .portfolio .container .line .right .boxs .box .text {
+    padding: 10px;
+  }
+  .portfolio .container .line .right .boxs .box .text h5 {
+    font-size: 18px;
+  }
+  .portfolio .container .line .right .boxs .box .text span {
+    font-size: 13px;
+  }
+}
+.need-help {
+  padding: 70px 0;
+}
+.need-help .container .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #674df3;
+  text-align: center;
+  display: block;
+}
+.need-help .container .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+.need-help .container .desc {
+  color: #838694;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 769px;
+  margin: auto;
+  font-size: 14px;
+}
+.need-help .container .boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 70px;
+}
+.need-help .container .boxs .box {
+  border: 1px solid #e8e8ea;
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.need-help .container .boxs .box i {
+  font-size: 50px;
+  color: #674df3;
+}
+.need-help .container .boxs .box .text {
+  margin-top: 20px;
+}
+.need-help .container .boxs .box .text h4 {
+  font-weight: 600;
+  font-size: 28px;
+}
+.need-help .container .boxs .box .text span {
+  color: #838694;
+  display: block;
+  font-weight: 500;
+}
+.need-help .container .boxs .box .text span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .need-help .container .boxs {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .need-help .container .boxs .box {
+    padding: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .need-help {
+    padding: 30px 0;
+  }
+  .need-help .container .subtitle {
+    font-size: 14px;
+  }
+  .need-help .container .title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .need-help .container .desc {
+    font-size: 11px;
+  }
+  .need-help .container .boxs {
+    margin-top: 30px;
+  }
+  .need-help .container .boxs .box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .need-help .container .boxs .box i {
+    font-size: 35px;
+  }
+  .need-help .container .boxs .box .text {
+    margin-top: 10px;
+  }
+  .need-help .container .boxs .box .text h4 {
+    font-size: 18px;
+  }
+  .need-help .container .boxs .box .text span {
+    font-size: 12px;
+    margin-bottom: 4px !important;
+  }
+}
+.send-message {
+  padding: 70px 0;
+}
+.send-message .container {
+  background-color: #f7f7f9;
+  padding: 125px 100px;
+}
+.send-message .container .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #674df3;
+  text-align: center;
+  display: block;
+}
+.send-message .container .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+.send-message .container .desc {
+  color: #838694;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 769px;
+  margin: auto;
+  font-size: 14px;
+}
+.send-message .container form {
+  margin-top: 60px;
+}
+.send-message .container form .inputs input {
+  width: 48%;
+}
+.send-message .container form .inputs input::-webkit-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs input::-moz-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs input:-ms-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs input::-ms-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs input::placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs textarea {
+  width: 100%;
+  height: 130px;
+}
+.send-message .container form .inputs textarea::-webkit-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs textarea::-moz-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs textarea:-ms-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs textarea::-ms-input-placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs textarea::placeholder {
+  color: #0f1425;
+}
+.send-message .container form .inputs input:nth-child(1), .send-message .container form .inputs input:nth-child(3) {
+  margin-right: 10px;
+}
+.send-message .container form .inputs input,
+.send-message .container form .inputs textarea {
+  background-color: white;
+  padding: 14px;
+  font-size: 18px;
+  color: #0f1425;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 25px;
+}
+.send-message .container form .btn-container {
+  text-align: center;
+}
+.send-message .container form .btn-container .btn-message {
+  background-color: #674df3;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px 35px;
+  border: none;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .send-message .container {
+    padding: 50px;
+  }
+  .send-message .container form .inputs input {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .send-message {
+    padding: 30px;
+  }
+  .send-message .container {
+    padding: 15px;
+  }
+  .send-message .container .subtitle {
+    font-size: 14px;
+  }
+  .send-message .container .title {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .send-message .container .desc {
+    font-size: 11px;
+  }
+  .send-message .container form {
+    margin-top: 30px;
+  }
+  .send-message .container form .inputs input,
+.send-message .container form .inputs textarea {
+    margin-bottom: 10px;
+    margin-right: 0;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .send-message .container form .inputs textarea {
+    margin-bottom: 15px;
+    height: 90px;
+  }
+  .send-message .container form .btn-container .btn-message {
+    font-size: 13px;
+    padding: 7px 20px;
+  }
 }
