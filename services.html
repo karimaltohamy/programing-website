@@ -19,6 +19,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- start header top -->
@@ -191,7 +193,7 @@
     <!-- end menu mobile -->
 
     <!-- start page title warpper -->
-    <div class="page-title-warpper">
+    <div class="page-title-warpper" data-aos="zoom-in-down">
       <div class="container">
         <div class="content">
           <h2>Services</h2>
@@ -206,11 +208,13 @@
     <!-- start Working Process -->
     <div class="working-process">
       <div class="container">
-        <span class="subtitle">Working Process</span>
-        <h3 class="title">Industry Best Practices to the Core</h3>
+        <span class="subtitle" data-aos="fade-down">Working Process</span>
+        <h3 class="title" data-aos="fade-up">
+          Industry Best Practices to the Core
+        </h3>
         <div class="boxs">
-          <div class="box">
-            <div class="circle"><span>01</span></div>
+          <div class="box" data-aos="fade-right">
+            <div class="circle" data-aos="zoom-in"><span>01</span></div>
             <div class="text">
               <h5>Discover</h5>
               <p>
@@ -219,8 +223,8 @@
               </p>
             </div>
           </div>
-          <div class="box">
-            <div class="circle"><span>02</span></div>
+          <div class="box" data-aos="fade-up">
+            <div class="circle" data-aos="zoom-in"><span>02</span></div>
             <div class="text">
               <h5>Planning</h5>
               <p>
@@ -228,15 +232,15 @@
               </p>
             </div>
           </div>
-          <div class="box">
-            <div class="circle"><span>03</span></div>
+          <div class="box" data-aos="fade-down">
+            <div class="circle" data-aos="zoom-in"><span>03</span></div>
             <div class="text">
               <h5>Design & Dev</h5>
               <p>At this step, we cater to requirement backed web services</p>
             </div>
           </div>
-          <div class="box">
-            <div class="circle"><span>04</span></div>
+          <div class="box" data-aos="fade-up">
+            <div class="circle" data-aos="zoom-in"><span>04</span></div>
             <div class="text">
               <h5>Testing</h5>
               <p>
@@ -245,8 +249,8 @@
               </p>
             </div>
           </div>
-          <div class="box">
-            <div class="circle"><span>05</span></div>
+          <div class="box" data-aos="fade-left">
+            <div class="circle" data-aos="zoom-in"><span>05</span></div>
             <div class="text">
               <h5>Project Deliver</h5>
               <p>
@@ -264,9 +268,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 left">
-            <span class="subtitle"> Guaranteed Customer Satisfaction </span>
-            <h1 class="title">Ideate, Design And Fuel Business Growth</h1>
-            <p class="desc">
+            <span class="subtitle" data-aos="fade-down">
+              Guaranteed Customer Satisfaction
+            </span>
+            <h1 class="title" data-aos="fade-up">
+              Ideate, Design And Fuel Business Growth
+            </h1>
+            <p class="desc" data-aos="fade-right">
               With over 20 years of experience and 850+ employees on board,
               Iflexion serves medium-sized and large companies globally.
               Profound knowledge coupled with business understanding is what
@@ -274,22 +282,22 @@
               their employees.
             </p>
             <div class="mini-boxs">
-              <div class="mini-box">
+              <div class="mini-box" data-aos="fade-up">
                 <img src="images/trust.png" alt="" />
                 <h4>Best Trusted Partner</h4>
               </div>
-              <div class="mini-box">
+              <div class="mini-box" data-aos="fade-down">
                 <img src="images/settings.png" alt="" />
                 <h4>24/7 Tehnical Support</h4>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 right">
-            <div class="image">
+            <div class="image" data-aos="fade-left">
               <img src="images/satisfaction-two.jpg" alt="" />
             </div>
 
-            <div class="box-populate">
+            <div class="box-populate" data-aos="fade-up">
               <h2>25 Years Of Experience in IT Solutions</h2>
               <img src="images/member3.jpg" alt="" />
             </div>
@@ -303,10 +311,10 @@
     <div class="client-feedback">
       <div class="container">
         <div class="content">
-          <span class="subtitle">Clients Feedback</span>
-          <h2 class="title">What Our Clients Say Us</h2>
+          <span class="subtitle" data-aos="fade-right">Clients Feedback</span>
+          <h2 class="title" data-aos="fade-left">What Our Clients Say Us</h2>
           <div class="boxs">
-            <div class="box">
+            <div class="box" data-aos="zoom-in-down">
               <div class="image">
                 <img src="images/member1.jpg" alt="" />
               </div>
@@ -334,7 +342,7 @@
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in-down">
               <div class="image">
                 <img src="images/member2.jpg" alt="" />
               </div>
@@ -475,5 +483,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/menu-mobile.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
